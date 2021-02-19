@@ -7,7 +7,7 @@ const ResourceRouter = require('./resource/router');
 const server = express();
 
 server.use(express.json());
-server.use('/api/project', ProjectRouter);
-server.use('/api/resource', ResourceRouter);
+server.use('/api/projects', ProjectRouter);
+server.use('/api/resources', ResourceRouter);
 
 module.exports = server;
