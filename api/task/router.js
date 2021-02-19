@@ -5,7 +5,7 @@ const Task = require('./model')
 const router = express.Router();
 
 router.get('/', (req,res) => {
-    Task.getTask()
+    Task.getTasks()
     .then(tasks => {
         res.status(200).json(tasks)
     })
@@ -21,7 +21,8 @@ router.get('/', (req,res) => {
             res.status(201).json(task);
         })
         .catch(error => {
-            next(error)
+            console.log(error.message)
+            res.status(500).json({message:`${error.message}`})
         })
         })
     

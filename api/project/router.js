@@ -21,7 +21,8 @@ router.post('/', (req,res) => {
         res.status(201).json(project);
     })
     .catch(error => {
-        next(error)
+        res.status(500).json({error: `${error.message}`})
+        console.log(error.message)
     })
     })
 

@@ -13,7 +13,7 @@ function getResources () {
 
 function getResourceById (id){
    return db('resources')
-   .where({id})
+   .where({resources_id})
    .first()
    }
    
