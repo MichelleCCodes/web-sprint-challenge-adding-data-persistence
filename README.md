@@ -52,7 +52,11 @@ A **task** is one of the steps needed to complete a project and is stored in a `
 - [ ] `project_id` - required and points to an actual `project_id` in the `projects` table
 
 A **resource assignment** connects a resource and a project, and is stored in a `project_resources` table. You decide what columns to use.
-
+- [] `project_id` - from project table
+<!-- - [] `project_name` - from project table  -->
+- [] `resource_id` - from resource table
+<!-- - [] `resource_name` - from resource table -->
+ 
 ### Required Endpoints
 
 Build an API inside the `api` folder with endpoints for:
