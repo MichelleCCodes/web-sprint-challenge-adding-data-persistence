@@ -115,7 +115,11 @@ After finishing your required elements, you can push your work further. These go
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
-1. Explain the difference between Relational Databases and SQL.
+1. Explain the difference between Relational Databases and SQL. 
+  SQL stands for Structured Query Language and allows you to work with relational databases.
 2. Why do tables need a Primary Key?
+A primary key allows you to assign a unique id to a value in any table. This is useful when you need to make references to specific values in a table. 
 3. What is the name given to a table column that references the Primary Key on another table?
+Foreign key.
 4. What do we need in order to have a _many to many_ relationship between two tables?
+A table that has a many to many relatioship between two tables joins each of the tables using a foreign key from each table. 

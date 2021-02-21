@@ -13,7 +13,7 @@ server.use("/api/resources", ResourceRouter);
 server.use("/api/tasks", TaskRouter);
 
 server.get("/", (req, res) => {
-  res.status(200).json({ message: "Hello :)" });
+  res.status(200).json({ message: "Hello :), from Sprint 2" });
 });
 
 module.exports = server;

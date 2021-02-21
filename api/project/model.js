@@ -11,14 +11,10 @@ function getProjects() {
   return db("projects");
 }
 
-function getProjectById(id) {
-  return db("projects").where({ id }).first();
-}
-
 function addProject(project) {
   return db("projects")
     .insert(project)
     .then((ids) => {
-      return getProjectById(ids[0]);
+      return db('projects').where({project_id: ids[0]});
     });
 }
